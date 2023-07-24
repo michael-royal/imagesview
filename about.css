@@ -1,0 +1,229 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  animation-name: space;
+  animation-timing-function: ease;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  background-color: rgb(3, 0, 0);
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+@font-face {
+  font-family:Aventi ;
+  src: url('/imageslider/AventiBold.ttf');
+}
+
+
+@font-face {
+  font-family:Glitch ;
+  src: url('/imageslider/CholesterolGlitch-1GzmL.otf');
+}
+
+@font-face {
+  font-family:Glitch1 ;
+  src: url('/imageslider/SonOfAGlitchItalic-KDlW.ttf');
+}
+
+@font-face {
+  font-family:Glitch3 ;
+  src: url('/imageslider/ThoseglitchRegular-Ea28l.otf');
+}
+
+header{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-bottom: solid 3px blue;
+  border-bottom-left-radius: 10px;
+  background-color: lightblue;
+  border-bottom-right-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  /* position: fixed;
+  left: 0;
+  right: 0; */
+}
+header h1{
+  /* margin-right: 10%; */
+  font-size: 40px;
+  margin: 0px 10% 0px 0px;
+}
+
+
+h1{
+   font-family: Glitch3;
+   color: transparent;
+   margin: 30px;
+   font-size: 60px;
+   background: radial-gradient(purple, blue, purple, blue);
+   background-position: 0 0;
+   -webkit-background-clip: text;
+   animation-name: space;
+   animation-timing-function: ease;
+   animation-duration: 40s;
+   animation-iteration-count: infinite;
+}
+@keyframes space{
+  100%{
+    background-position: 0 1000px;
+  }
+}
+
+nav ul {
+  width: 1000px;
+  text-align: center;
+  /* background: blue; */
+  padding: 10px;
+  display: flex;
+  font-size: 30px;
+  font-family: Glitch;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  transition: 0.5s;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: purple;
+  transition: 0.5s;
+}
+
+@media(max-width:760px){
+  nav ul{
+    display: grid;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    background: lightblue;
+    border: solid 2px blue;
+    margin-top: 34px;
+    margin-left: 500px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+  .dext{
+    margin-left: -100px;
+  }
+
+  nav ul li{
+    margin: 10px;
+  }
+}
+#ax{
+  position: fixed;
+  background:lightblue;
+  border: 3px solid blue;
+  border-radius: 50%;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 5px;
+  right: 0;
+  margin-right: 20px;
+}
+#ax h1{
+  font-size: 25px;
+  
+  font-family: Glitch1;
+}
+
+nav ul li a:hover{
+text-decoration:line;
+  color: blue;
+}
+
+nav ul li:hover{
+  border-bottom: solid 3px blue;
+}
+#active{
+  text-decoration: line;
+  color: blue;
+}
+p{
+  color: white;
+  font-size: 40px;
+  width: 80%;
+  margin: 50px;
+  line-height: 2em;
+
+}
+.container h1{
+  width: 100%;
+  background: radial-gradient(blue, white, blue, white);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.container{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width:760px) {
+  h1{
+    font-family: Glitch3;
+    color: transparent;
+    margin: 50px;
+    font-size: 20px;
+    background: radial-gradient(purple, blue, purple, blue);
+    background-position: 0 0;
+    -webkit-background-clip: text;
+    animation-name: space;
+    animation-timing-function: ease;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+ }
+
+ p{
+  color: white;
+  font-size: 30px;
+  width: 90%;
+  margin: 20px;
+  line-height: 1.2em;
+
+}
+
+
+@keyframes space{
+  100%{
+    background-position: 0 500px;
+  }
+}
+}
+
+.img{
+  filter: invert(100%);
+  width: 100px;
+}
+
+.telegram a{
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp a{
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
